@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fb="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp" />
+
+            <app.company.androidtask.Utills.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/android_task"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_40ssp" />
+
+            <app.company.androidtask.Utills.MyEditText
+                android:id="@+id/username_text_view"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10_height"
+                android:layout_marginTop="@dimen/_45_height"
+                android:layout_marginEnd="@dimen/_10_height"
+                android:layout_marginBottom="@dimen/_10_height"
+                android:drawableStart="@drawable/name"
+                android:hint="@string/username"
+                android:inputType="text" />
+
+            <app.company.androidtask.Utills.MyEditText
+                android:id="@+id/password_text_view"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10_height"
+                android:drawableStart="@drawable/password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textAlignment="viewStart" />
+
+            <app.company.androidtask.Utills.ButtonBold
+                android:id="@+id/login_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45_height"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10_height"
+                android:background="@drawable/shape_login_background"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10_height"
+                android:orientation="horizontal">
+
+                <app.company.androidtask.Utills.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_4_height"
+                    android:text="@string/new_user"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorSecondaryLight"
+                    android:textSize="@dimen/_12ssp" />
+
+                <app.company.androidtask.Utills.MyTextViewBold
+                    android:id="@+id/sign_up_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_4_height"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12ssp" />
+
+                <app.company.androidtask.Utills.MyTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:padding="@dimen/_4_height"
+                    android:text="@string/forget_password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12ssp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <app.company.androidtask.Utills.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_4_height"
+                android:text="@string/or"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_with_facebook_button"
+                style="@style/FacebookLoginButton"
+                fb:login_text="@string/loginFacebookButton"
+                fb:logout_text="" />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/remember_me_check_box"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4_height"
+        android:orientation="vertical">
+
+        <app.company.androidtask.Utills.MyTextView
+            android:id="@+id/phone_number_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10_height"
+            android:gravity="center"
+            android:padding="@dimen/_4_height"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorSecondaryDark" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <app.company.androidtask.Utills.MyTextView
+                android:id="@+id/cancel_text_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45_height"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14ssp" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/colorSecondaryDark" />
+
+            <app.company.androidtask.Utills.MyTextView
+                android:id="@+id/call_text_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45_height"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/call"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14ssp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+

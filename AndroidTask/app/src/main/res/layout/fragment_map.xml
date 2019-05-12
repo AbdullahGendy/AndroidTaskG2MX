@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/mapView"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/card_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/_20_height"
+        android:layout_marginTop="@dimen/_20_height"
+        android:layout_marginEnd="@dimen/_20_height"
+        android:layout_marginBottom="@dimen/_100sdp"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="@dimen/_20_height">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/destination_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4_height"
+                android:gravity="center"
+                android:padding="@dimen/_4_height"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/distance_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4_height"
+                android:drawablePadding="@dimen/_4_height"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/_12ssp" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</FrameLayout>

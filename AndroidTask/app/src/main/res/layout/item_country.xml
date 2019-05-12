@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:background="@drawable/shape_edit_text_background"
+    android:orientation="horizontal"
+    android:padding="@dimen/_4ssp"
+    android:weightSum="100">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:orientation="vertical"
+        android:tint="@color/colorSecondaryLight">
+
+        <app.company.androidtask.Utills.MyTextViewBold
+            android:id="@+id/country_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/_4sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_11ssp"
+            tools:ignore="RtlHardcoded" />
+
+        <app.company.androidtask.Utills.MyTextView
+            android:id="@+id/capital_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_10ssp" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" />
+
+
+</LinearLayout>

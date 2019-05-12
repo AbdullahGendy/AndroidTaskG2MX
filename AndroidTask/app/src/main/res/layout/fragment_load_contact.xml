@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <app.company.androidtask.Utills.MyTextViewBold
+        android:id="@+id/failure_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/can_t_access_your_contacts"
+        android:textColor="@color/colorSecondaryDark"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+</FrameLayout>
